@@ -34,6 +34,7 @@ NLog.Schema, NLog,Web, NLog.Web.AspNetCore, NUnit, NUnit3TestAdapter, Selenium.W
    Copy to Output Directory -> Copy always
 
 7. WebDriverFactory.cs class must have these settings so browser will run faster and not stall
+
         private IWebDriver GetChromeDriver()
         {
             var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
