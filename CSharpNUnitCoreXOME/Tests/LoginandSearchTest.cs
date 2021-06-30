@@ -28,7 +28,7 @@ namespace CSharpNUnitCoreXOME.Tests
         public void LoginandSearch_Test()
         {
             LoginPage loginpg = new LoginPage(Driver);
-            loginpg.Login("sqatester2018@gmail.com", "Automation123#");
+            loginpg.Login("sqatester2018@gmail.com", "TestPassword2021");
             string loggedInUser = loginpg.GetLoggedInUser();
             Assert.AreEqual(username, loggedInUser, $"Logged in user name doesn't match. Expected => {username}" +
             $" Actual=>{loggedInUser}");
